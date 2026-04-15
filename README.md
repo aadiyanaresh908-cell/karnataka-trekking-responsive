@@ -1,0 +1,1 @@
+# karnataka-trekking-responsive
