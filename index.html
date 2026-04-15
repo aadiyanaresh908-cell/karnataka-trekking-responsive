@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Treks | Karnataka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"> Nature lovers</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#treks">Trek Routes</a></li>
+            <li><button class="btn-nav" onclick="openModal()">Join a Group</button></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <span class="badge">Monsoon 2026</span>
+            <h1>Explore the Western Ghats</h1>
+            <p>Experience the mist-covered mountains of Karnataka.</p>
+            <a href="#treks" class="cta-scroll">Find Your Trail ↓</a>
+        </div>
+    </header>
+
+    <section class="container" id="treks">
+        <h2 class="section-title">Popular Karnataka Trails</h2>
+        <div class="gallery-grid">
+            
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1637484196299-073321bfbaca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8S3VkcmVtdWtoJTIwUGVha3xlbnwwfHwwfHx8MA%3D%3D');"></div>
+                <div class="card-overlay">
+                    <span>Chikkamagaluru</span>
+                    <h3>Kudremukh Peak</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsKHRcVZnDw-Ajee7_W-BaAMQ4iq17EQPP1A&s');"></div>
+                <div class="card-overlay">
+                    <span>Coorg</span>
+                    <h3>Kumara Parvatha</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1542332213-9b5a5a3fad35?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="card-overlay">
+                    <span>Shimoga</span>
+                    <h3>Kodachadri Hills</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/e6/f9/4d/makalidurga-trek-plan.jpg?w=900&h=500&s=1');"></div>
+                <div class="card-overlay">
+                    <span>Bengaluru</span>
+                    <h3>Makalidurga Hills</h3>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR3baliLxLl3oCWnLveJnsRnLMEHwUrZegUA&s');"></div>
+                <div class="card-overlay">
+                    <span>Chikkamagaluru</span>
+                    <h3>Mullayanagiri Peak</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSfLvp3AKgTmPPRjCCfoJ549QmfFYQS34-EQ&s');"></div>
+                <div class="card-overlay">
+                    <span>Kodagu</span>
+                    <h3>Tadiandamol Peak</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Trek Inquiry</h2>
+            <form class="modal-form" onsubmit="event.preventDefault(); closeModal();">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" class="btn-nav">Get Itinerary</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() { document.getElementById("bookingModal").style.display = "flex"; }
+        function closeModal() { document.getElementById("bookingModal").style.display = "none"; }
+    </script>
+
+</body>
+</html>
